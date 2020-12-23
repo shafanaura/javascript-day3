@@ -37,7 +37,7 @@ requestData
 		throw error;
 	});
 
-// async/await
+// untuk mengecheck bahwa function nya berfungsi dengan baik
 async function getData() {
 	try {
 		const result = await requestData;
