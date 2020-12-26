@@ -22,12 +22,14 @@ const getMonth = (callback) => {
 	}, 4000);
 };
 
-const getData = month.map((item) => {
-	return item;
-});
+const getData = (response, data) => {
+	if (response == null) {
+		data.map((item) => {
+			console.log(item);
+		});
+	} else {
+		console.log(response);
+	}
+};
 
-function printResult(param) {
-	console.log(param);
-}
-
-getMonth();
+getMonth(getData);

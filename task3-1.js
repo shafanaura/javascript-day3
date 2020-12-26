@@ -6,7 +6,7 @@ const posts = [
 function getPosts() {
 	setTimeout(() => {
 		let output = "";
-		posts.forEach((post, index) => {
+		posts.forEach((post) => {
 			output += `${post.title}, ${post.body} \n`;
 		});
 		console.log(output);
